@@ -75,3 +75,54 @@ body {
 .menu-area li:hover > .dropdown {
   perspective: 1000px;
 }
+
+/* Sidebar */
+.sidebar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.siebar .menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.sidebar .menu .item a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.sidebar .menu .item a:hover {
+  background: #8621f8;
+  transition: 0.3s ease;
+}
+
+.submenu {
+  background: rgba(255, 255, 255, 0.1);
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.show {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.menu .item .submenu a {
+  padding-left: 80px;
+}
